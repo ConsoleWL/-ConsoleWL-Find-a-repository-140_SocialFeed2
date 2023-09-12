@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const CreatePostForm = ({}) => {
+const CreatePostForm = ({ onNewPost }) => {
   const [name, setName] = useState("");
   const [text, setText] = useState("");
 
@@ -12,7 +12,7 @@ const CreatePostForm = ({}) => {
       text,
     };
 
-    console.log(formData);
+    onNewPost(formData);
   };
 
   return (
