@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div>
+      <div className="feed-container">
         <CreatePostForm onNewPost={handleNewPost} />
         <PostList posts={posts} />
       </div>

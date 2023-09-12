@@ -16,16 +16,23 @@ const CreatePostForm = ({ onNewPost }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label>Name</label>
-        <input value={name} onChange={(e) => setName(e.target.value)} />
+    <form onSubmit={handleSubmit} className="container">
+      <div className="flex-box">
+        <div className="input-form">
+          <div>
+            <label>Name</label>
+            <input value={name} onChange={(e) => setName(e.target.value)} />
+          </div>
+          <div>
+            <label>Post</label>
+            <input value={text} onChange={(e) => setText(e.target.value)} />
+          </div>
+        </div>
+
+        <div className="btn-create">
+          <button type="submit">Create</button>
+        </div>
       </div>
-      <div>
-        <label>Post</label>
-        <input value={text} onChange={(e) => setText(e.target.value)} />
-      </div>
-      <button type="submit">Create</button>
     </form>
   );
 };

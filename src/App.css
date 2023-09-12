@@ -1,3 +1,44 @@
-body {
-    background-color: gray;
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Feed */
+.feed-container{
+    background-color: #CAC1B7;
+    padding:20px 250px;
+    
+}
+
+.container{
+    background-color: whitesmoke;
+    padding: 20px 50px;
+}
+
+/* Create Form */
+.flex-box{
+    display: flex;
+    gap: 10px;
+}
+
+.input-form{
+    width: 70%;
+}
+
+.input-form label {
+    display: block;
+}
+
+.input-form input {
+    width: 100%;
+}
+
+
+.btn-create{
+    width: 30%;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
 }
