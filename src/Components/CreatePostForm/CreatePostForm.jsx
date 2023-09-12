@@ -11,6 +11,8 @@ const CreatePostForm = ({}) => {
       name,
       text,
     };
+
+    console.log(formData);
   };
 
   return (
