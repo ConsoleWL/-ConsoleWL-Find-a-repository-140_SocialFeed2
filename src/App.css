@@ -9,12 +9,13 @@
 .feed-container{
     background-color: #CAC1B7;
     padding:20px 250px;
-    
 }
 
 .container{
-    background-color: whitesmoke;
     padding: 20px 50px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 /* Create Form */
@@ -24,21 +25,59 @@
 }
 
 .input-form{
-    width: 70%;
+    width: 80%;
 }
 
 .input-form label {
     display: block;
+    margin-top: 10px;
 }
 
 .input-form input {
     width: 100%;
 }
+.input-form textarea{
+    width: 100%;
+}
 
 
+/* form Create Button */
 .btn-create{
-    width: 30%;
+    width: 20%;
     display: flex;
     justify-content:center;
     align-items: flex-end;
 }
+
+ button:hover{
+    background-color: #9c9287;
+}
+
+/* Post container */
+.post-Container {
+   margin-bottom: 20px;
+   border-bottom: 2px solid #CAC1B7;
+}
+
+.post-Container p {
+    padding: 10px 0px;
+}
+
+/* Buttons */
+button{
+    background-color: #CAC1B7;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    
+  }

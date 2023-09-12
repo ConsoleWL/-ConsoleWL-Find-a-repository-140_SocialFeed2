@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Post.css";
+import "./images/Like.png";
 
 const Post = ({ postObj }) => {
   const [isLiked, setIsLiked] = useState(false);
@@ -13,14 +14,15 @@ const Post = ({ postObj }) => {
     setIsDisliked(!isDisliked);
   };
 
+  //   would be nice to know if  like is active and then you toggle dislike and like automatically becomes unactive
   const btnLike = isLiked ? "active-like-btn" : "";
   const btnDisLike = isDisliked ? "active-dislike-btn" : "";
 
   return (
-    <div>
+    <div className="post-Container">
       <h4>{postObj.name}</h4>
       <p>{postObj.text}</p>
-      <div>
+      <div className="buttons">
         <button className={btnLike} onClick={handleLike}>
           Like
         </button>

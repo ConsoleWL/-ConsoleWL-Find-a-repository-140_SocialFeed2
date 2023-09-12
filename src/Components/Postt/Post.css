@@ -1,7 +1,16 @@
 .active-like-btn{
-    background-color: green;
+    background-color: rgba(149, 206, 149, 0.437);
 }
 
 .active-dislike-btn{
-    background-color: red;
+    background-color: rgba(223, 129, 129, 0.467);
 }
+
+/* .active-like-btn:hover {
+    background-color: rgba(149, 206, 149, 0.793);
+}
+
+.active-dislike-btn:hover{
+    background-color: rgba(223, 129, 129, 0.756);
+} */
+

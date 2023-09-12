@@ -21,11 +21,26 @@ const CreatePostForm = ({ onNewPost }) => {
         <div className="input-form">
           <div>
             <label>Name</label>
-            <input value={name} onChange={(e) => setName(e.target.value)} />
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              maxLength={30}
+              placeholder="Enter your name"
+              required
+            />
           </div>
+
+          {/* If I add a very long text for some reason it does not automatically go the the next line ... it's just going to right out of the page =() */}
           <div>
             <label>Post</label>
-            <input value={text} onChange={(e) => setText(e.target.value)} />
+            <textarea
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+              rows={4}
+              maxLength={500}
+              placeholder="Enter your text...max length 500 symbols"
+              required
+            />
           </div>
         </div>
 
