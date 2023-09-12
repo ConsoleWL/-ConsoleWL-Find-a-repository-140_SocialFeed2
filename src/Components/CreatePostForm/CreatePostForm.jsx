@@ -30,7 +30,7 @@ const CreatePostForm = ({ onNewPost }) => {
             />
           </div>
 
-          {/* If I add a very long text for some reason it does not automatically go the the next line ... it's just going to right out of the page =() */}
+          {/* word wrap */}
           <div>
             <label>Post</label>
             <textarea

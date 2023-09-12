@@ -61,6 +61,7 @@
 
 .post-Container p {
     padding: 10px 0px;
+    word-wrap: break-word;
 }
 
 /* Buttons */
@@ -80,4 +81,10 @@ button:hover {
     justify-content: end;
     gap: 10px;
     
-  }
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+}
+
